@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Dancing Planets</title>
+</head>
+<body>
+    <div class="root">
+        <div class="content">
+          <!-- canvases -->
+          <div class="canvas-wrapper">
+            <canvas class="canvas" id="canvas-orbit"> </canvas>
+            <canvas class="canvas" id="canvas-background"> </canvas>
+          </div>
+          <!-- side bar -->
+          <aside class="drawer">
+            <div class="row block">
+              <div class="column">
+                <!-- toggle-play -->
+                <button class="toggle-play" >PAUSE</button>
+                <div class="column ">
+                  <!-- Switch lines-dots -->
+                    <div class="switch switch-blue ">
+                      <input type="radio" class="switch-input" name="view2" value="lines" id="lines" checked>
+                      <label for="lines" class="switch-label switch-label-off">Lines</label>
+                      <input type="radio" class="switch-input" name="view2" value="dots" id="dots">
+                      <label for="dots" class="switch-label switch-label-on">Dots</label>
+                      <span class="switch-selection"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Planets controllers -->
+            <div class="row separator"></div>
+            <div>
+              <label><span style="color:#669900;font-weight: bold;">Green</span> Planet</label>
+                <div class="column">
+                  <label>Orbit </label>
+                  <input id="earthOrbit" type="range" value="210" min="20" max="360" step="5">
+                </div>
+                <div class="column">
+                  <label>Speed</label>
+                  <input id="earthSpeed" type="range" value="9.7" min="1" max="20" step="0.1">
+                </div>
+            </div>
+            <div class="row separator"></div>
+            <div>
+              <label ><span style="color:#990033;font-weight: bold;">Red</span> Planet</label>
+                <div class="column">
+                  <label>Orbit </label>
+                  <input id="marsOrbit" type="range" value="315" min="20" max="360" step="5">
+                </div>
+                <div class="column">
+                  <label>Speed</label>
+                  <input id="marsSpeed" type="range" value="5" min="1" max="20" step="0.1">
+                </div>
+            <!-- Planet setters-->
+            </div>
+            <div class="row separator"></div>
+            <div class="row">
+              <div class="column">
+                  <button class="planet-setter" name="mercury" >Mercury</button>
+                  <button class="planet-setter" name="venus" >Venus</button>
+                  <button class="planet-setter" name="earth" >Earth</button>
+                  <button class="planet-setter" name="mars" >Mars</button>
+              </div>
+              <div class="column">
+                  <button class="planet-setter" name="jupiter" >Jupiter</button>
+                  <button class="planet-setter" name="saturn" >Saturn</button>
+                  <button class="planet-setter" name="uranus" >Uranus</button>
+                  <button class="planet-setter" name="neptune" >Neptune</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </body>
+</body>
+<script src="scripts/index.js"></script>
+</html>
