@@ -6,5 +6,4 @@ I've seen this many times on YouTube and other sites so i had to  have it and ad
 It 's so fun to implement as well as to play with, hope you find it fun too, [try it yourself](https://mohammed0xff.github.io/dancing-planets/src/index.html).
 
 ## Demo
-
-
+![demo](https://github.com/mohammed0xff/dancing-planets/blob/main/demo/screenshots.png)
